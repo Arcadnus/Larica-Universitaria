@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LISTA>
+	<RECEITA>
+		<ID>1</ID>
+		<NOME>Barrinha de Cereais Caseira</NOME>
+		<INGREDIENTES></INGREDIENTES>
+		<PASSOS>
+			<um>
+				Preaqueça o forno a 180 ºC (356 ºF / 453.15 K)
+			</um>
+			<dois>
+				Coloque a aveia em flocos, as oleaginosas e o cacau em pó (caso tenha escolhido usá-lo) no processador. Triture em pedaços pequenos. (Oleaginosas = Amendoim, Nozes, Castanhas, Amêndoas, Avelãs e Macadâmia / Processador = Liquidificador ou algo que tenha lâminas giratórias com função de triturar algo em pequenos pedaços)
+			</dois>
+			<tres>
+				Transfira a mistura para uma tigela e adicione o melado e a banana amassada. Misture tudo até ficar homogêneo.
+			</tres>
+			<quatro>
+				Unte uma forma com açúcar (Cubra todo o interior da forma com uma fina camada de Manteiga ou Margarina e depois jogue açúcar sobre toda a superfície melada com Manteiga ou Margarina)
+			</quatro>
+			<cinco>
+				Espalhe a mistura sobre a fôrma untada, apertando com a mão ou com uma espátula. Forme uma camada de espessura uniforme.
+			</cinco>
+			<seis>
+				Leve ao forno por cerca de 30 minutos a 180 °C.
+			</seis>
+			<sete>
+				Retire do forno e espere esfriar para cortar as barrinhas em tamanhos iguais.
+			</sete>
+			<oito>
+				Receita pronta!
+			</oito>
+		</PASSOS>
+		<PREÇO>R$10,00</PREÇO>
+		<IMAGEM>barrinha1.Jpg</IMAGEM>
+		<LINK>aaa</LINK>
+		<tempo>40 min</tempo>
+		<dificuldade>Fácil</dificuldade>
+		<porcoes>7-12 porções</porcoes>
+	</RECEITA>
+	<RECEITA>
+		<ID>2</ID>
+		<NOME>COISA 2</NOME>
+		<INGREDIENTES>BBBBBBBBBBBBBBBBB</INGREDIENTES>
+		<PREÇO>R$20,00</PREÇO>
+		<IMAGEM>thumb_2.jpg</IMAGEM>
+		<LINK>bbb</LINK>
+	</RECEITA>
+	<RECEITA>
+		<ID>3</ID>
+		<NOME>COISA 3</NOME>
+		<INGREDIENTES>CCCCCCCCCCCCCCC</INGREDIENTES>
+		<PREÇO>R$30,00</PREÇO>
+		<IMAGEM>thumb_3.jpg</IMAGEM>
+		<LINK>ccc</LINK>
+	</RECEITA>
+	<RECEITA>
+		<ID>4</ID>
+		<NOME>COISA 4</NOME>
+		<INGREDIENTES>DDDDDDDDDDDDDDDD</INGREDIENTES>
+		<PREÇO>R$40,00</PREÇO>
+		<IMAGEM>thumb_4.jpg</IMAGEM>
+		<LINK>ddd</LINK>
+	</RECEITA>
+	<RECEITA>
+		<ID>5</ID>
+		<NOME>COISA 5</NOME>
+		<INGREDIENTES>EEEEEEEEEEEEEEEEE</INGREDIENTES>
+		<PREÇO>R$50,00</PREÇO>
+		<IMAGEM>thumb_5.jpg</IMAGEM>
+		<LINK>eee</LINK>
+	</RECEITA>
+</LISTA>

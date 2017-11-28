@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	clear: both;
+	margin: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+div{
+	display: clear;
+}
+
+p{
+	-webkit-margin-before: 0vh;
+	-webkit-margin-after: 0vh;
+}
+
+@font-face {
+	font-family: amarillo;
+	src: url(font/Amarillo.otf);
+}
+
+@font-face {
+	font-family: dosis;
+	src: url(font/Dosis-Bold.ttf);
+}
+
+@font-face {
+	font-family: dosisbold;
+	src: url(font/Dosis-Regular.ttf);
+}
+
+.vermelho{
+	background-color: red;
+}
+
+.vermelhoe{
+	background-color: darkred;
+}
+
+.azul{
+	background-color: blue;
+}
+
+.azulc{
+	background-color: lightblue;
+}
+
+.preto{
+	background-color: black;
+}
+
+.verde{
+	background-color: green;
+}
+
+.laranja{
+	background-color: orange;
+}
+
+.rosa{
+	background-color: pink;
+}
+
+.cinza{
+	background-color: gray;
+}
+
+.amarelo{
+	background-color: yellow;
+}
+
+.bege{
+	background-color: rgb(254, 221, 168);
+}
+
+
+.shadow{
+	-webkit-box-shadow: 0px 24px 50px -20px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 24px 50px -20px rgba(0,0,0,0.75);
+	box-shadow: 0px 24px 50px -20px rgba(0,0,0,0.75);
+}
+
+.inshadow{
+	-webkit-box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+}
+
+.dualshadows{
+	text-shadow: 5px 1px 0 rgba(140,140,140,0.6) , -6px -1px 1px rgba(0,0,0,0.67) ;
+}
+
+.container{
+	height: 87vh;
+	overflow: auto;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.fundo1{
+	background-image: url("img/NEW_BG1.png");
+}
+
+.fundo2{
+	background-image: url("img/NEW_BG2.png");
+}
+
+.fundo3{
+	background-image: url("img/NEW_BG3.png");
+}
+
+.row{
+	box-sizing:border-box;
+	display:-ms-flexbox;
+	display:-webkit-box;
+	display:flex;
+	-ms-flex:0 1 auto;
+	-webkit-box-flex:0;
+	flex:0 1 auto;
+	-ms-flex-direction:row;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	flex-direction:row;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+
+.center{
+	-ms-flex-pack:center;
+	-webkit-box-pack:center;
+	justify-content:center;
+	text-align:center
+}
+
+/*pagina index*/
+
+	.grandelogoinicial{
+		width: 33.33vw;
+		height: 33.33vw;
+		margin: 0 auto 0 auto;
+		background-image: url("img/app_ICON.png");
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+/*primeira página*/
+	
+	.frentecabecalho{
+		height: 13vh;
+		width: 100%;
+		position: absolute;
+		background-image: url("img/WoodBackground.png");
+	}
+
+		.cabecalhologo{
+			height: 13vh;
+			width: 19.5vw;
+		}	
+
+		.cabecalhotitulo{
+			height: 13vh;
+			width: 61vw;
+			font-size: 2em;	
+		}
+
+		.headerlogo{
+			height: 10vh;
+			margin-top: 1.5vh;
+			background-repeat: no-repeat;
+			background-position: center;
+			mix-blend-mode: color-burn;
+		}
+
+		.menubotao1{
+			display: block;
+			height: 13vh;
+			width: 16.5vw;
+		}
+
+		.menuabre{
+			background-image: url("img/LIST_MENU.png");
+			background-size: 60%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.menufecha{
+			background-image: url("img/CLOSE_MENU.png");
+			background-size: 9vh;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.menubotao2{
+			display: none;
+			height: 13vh;
+			width: 19.5vw;
+		}	
+
+	.atrascabecalho{
+		height: 13vh;
+	}	
+
+		.imgreceita{
+			height: 27vw;
+			width: 27vw;
+			margin: 1vh;
+			margin-left: 1.5vh;
+			border-radius: 10%;
+			overflow: hidden;
+			float: left;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.imagemreceita{
+			width: 100%;
+		}
+
+		.nomereceita{
+			height: 27vw;
+			width: 57vw;
+			border-radius: 30px;
+			margin-top: 1vh;
+			margin-bottom: 1vh;
+			float: left;
+			font-family: amarillo;
+		}
+
+		.linkreceita{
+			height: 4vh;
+			width: 18vw;
+			margin-left: 40.5vw;
+			margin-top: 8vh;
+		}
+
+	.menulista{
+		width: 50%;
+		height: 87vh;
+		margin-left: 100%; /*alterna entre 100%(menu fechado) e 50%(menu aberto)*/
+		background-color: green;
+		animation-duration: 2s;
+		position: absolute;
+		display: none;
+	}
+
+		.itemlista{
+			height: 30vw;
+			width: 90vw;
+			margin: 5vw;
+			border-radius: 20px;
+			-webkit-box-shadow: 5px 20px 32px -1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 5px 20px 32px -1px rgba(0,0,0,0.75);
+			box-shadow:  5px 20px 32px -1px rgba(0,0,0,0.75);
+		}
+
+		.menuitens{
+			width: 90%;
+			height: 7vh;
+			border-bottom-style: solid;
+			border-bottom-color: white;
+			border-bottom-width: thick;
+			margin: 5%;
+		}
+
+		/*todo texto <h1> dentro da div de classe menuitens*/
+		.menuitens h1{
+			margin-top: 5vh;
+		}
+
+/*Segunda página*/
+
+	.favicon{
+		width: 5vh;
+		height: 5vh;
+		float: left;
+		margin-top: 4vh;
+	}	
+
+	.titletext{
+		width: 79vw;
+		height: 7vh;
+		float: left;
+		margin-left: 3vh;
+		margin-top: 3vh;
+	}
+
+	.titletext p{
+		font-size: 3vh;
+		font-family: amarillo;
+	}
+
+	.faviconimg{
+		width: 100%;
+		height: 100%;
+	}
+
+	.vidreceita{
+		width: 88vw;
+		height: 26.5vh;
+		float: left;
+		margin-left: 6vw;
+		margin-top: 1vh;
+		border-radius: 40px;
+		overflow: hidden;
+	}	
+
+		.imagembarrinha{
+			width: 100%;
+			margin-top: -6vh;
+		}
+
+		.playbotao{
+			width: 17vh;
+			height: 17vh;
+			margin: 6vh auto 0 auto;
+			background-image: url(img/play.svg);
+			background-size: initial;
+		}
+
+	.container2{
+		width: 88vw;
+		height: 20vh;
+		background-color: rgba(0,0,0,0.1);
+		float: left;
+		margin-top: 1vh;
+		margin-left: 6vw;
+		border-radius: 20px;
+		text-align: left;
+		font-family: dosis;
+	}
+
+		.icone{
+			width: 90vw;
+			height: 6vh;
+			float: left;
+			margin-top: 0.7vh;
+			font-size: 4vh;
+			margin-left: 3vw;
+		}
+
+		.icone p{
+			margin-left: 15vw;
+			margin-top: 0.5vh;
+		}
+
+		.icone img{
+			width: 5vh;
+			float: left;
+			margin-top: 0.5vh;
+		}
+
+	.preparo{
+		float: left;
+		width: 88vw;
+		height: 6vh;
+		margin-left: 5.5vw;
+		margin-top: 1.5vh;
+		border-radius: 20px;
+		background-image: url("img/WoodBackground.png");
+	}
+
+	.preparo p{
+		margin-top: 0.5vh;
+		font-size: 4vh;
+		color: black;
+		mix-blend-mode: overlay;
+		font-weight: bold;
+	}
+
+	.preparo p:active{
+		-webkit-box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+		box-shadow: inset 0px 24px 50px -20px rgba(0,0,0,0.75);
+	}
+
+	.container4{
+		width: 81vw;
+		float: left;
+		padding: 3vw;
+		border-radius: 20px;
+		margin-left: 6vw;
+		margin-top: 1.5vh;
+		background-color: rgba(0,0,0,0.1);
+		font-size: -webkit-xxx-large;
+		font-family: dosis;
+	}
+
+	.texto{
+		float: left;
+		font-size:-webkit-xxx-large;
+		padding: 3vw;
+		text-align: left;
+	}
+
+/*Terceira página*/
+	
+	.lista3,
+	.item,
+	.numeros,
+	.passoapasso{
+		float: left;
+	}
+
+	.lista3{
+		margin-top: 5vh;
+		float: left;
+	}
+
+	.item{
+		margin: 1vw;
+	}
+
+	.numeros{
+		margin: 2vw;
+		margin-left: 5vw;
+		border-radius: 50%;
+	}
+
+	.numeros p,
+	.passoapasso p{
+		padding: 2vw;
+		font-size: -webkit-xxx-large;
+		-webkit-margin-before: 0em;
+	}
+
+	.numeros p{
+		text-shadow: 2px 3px 0 rgba(0,240,240,1), -5px -1px 1px rgba(0,0,0,1);
+	}
+
+	.passoapasso{
+		height: auto;
+		width: 60vw;
+		padding: 2vw;
+		border-radius: 30px;
+		contain: content;
+	}
+

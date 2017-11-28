@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>App Larica Universitária</title>
+	<link rel="stylesheet" type="text/css" href="LUAppCSS.css">
+</head>
+<body>
+	<script>
+	 var xhttp, xmlDoc, txt, x, i, info1, info2, info3, info4, info5;
+	 xhttp = new XMLHttpRequest();
+	 xhttp.onreadystatechange = function() {
+	 	if (this.readyState == 4 && this.status == 200) {
+	 		xmlDoc = this.responseXML;
+				txt = "";
+				x = xmlDoc.getElementsByTagName("RECEITA");
+
+				for(i = 0; i < x.length; i++) {
+					txt = txt +
+	"<a href='LURecipe.html?id=" + x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue +"'>"+
+		"<div class='itemlista bege'>" +
+			"<div class='imgreceita' style='background-image:url(img/" + x[i].getElementsByTagName("IMAGEM")[0].childNodes[0].nodeValue + ");'>" + 
+			"</div>" +
+			"<div class='nomereceita'>"+
+				"<h1>" + x[i].getElementsByTagName("NOME")[0].childNodes[0].nodeValue + "</h1>" + 
+				"<div class='linkreceita'>"+
+					"<h2>" + x[i].getElementsByTagName("LINK")[0].childNodes[0].nodeValue + "</h2>" + 
+				"</div>" + 
+			"</div>" +
+		"</div>" + 
+	"</a>"; 
+
+				}
+
+				document.getElementById("maplelist").innerHTML = txt;
+	 	};
+	 	
+	 	/*
+	 	código de verificação de existencia de node no xml
+
+	 	if (this.responseXML.getElementsByTagName("//um")==null) {
+	 		alert("n existe");
+	 	}else{
+	 		alert("existe");
+	 	}
+	 	*/
+	 }
+		// função para abrir o menu
+		function abremenu(){
+			document.getElementById("menubotao1id").style.display = "none";		//Botao 1 desaparece
+			document.getElementById("menubotao2id").style.display = "block"; 	//Botão 2 aparece junto com o menu
+			document.getElementById("menulistaid").style.display = "block";		//Menu aparece
+			document.getElementById("menulistaid").style.marginLeft = "50%";	//Era pro menu se expandir do canto direito, mas não deu certo. Como não faz diferença tirar ou colocar essa linha de código, deixei aí para caso a gente use mais pra frente.
+		}
+		// Funcão para fechar o menu
+		function fechamenu(){
+			document.getElementById("menubotao1id").style.display = "block"; 	//Botao 1 aparece
+			document.getElementById("menubotao2id").style.display = "none";		//Botao 2 desaparece junto com o menu
+			document.getElementById("menulistaid").style.display = "none";		//Menu desaparece
+			document.getElementById("menulistaid").style.marginLeft = "100%"	//Era pro menu se encolher pro canto direito, mas não deu certo. Como não faz diferença tirar ou colocar essa linha de código, deixei aí para caso a gente use mais pra frente.
+		}
+
+
+		xhttp.open("GET", "lista.xml", true); 	//link para o xml
+		xhttp.send();							//não sei kk
+	</script>
+
+	<div class="frentecabecalho row">	<!-- container do cabeçalho. está em absolute no topo -->
+		<div class="cabecalhologo">	<!-- este é o quadrado vermelho da esquerda -->
+		</div>
+		<div class="cabecalhotitulo"> <!-- Título no centro. -->
+			<a href="LUindex.html">
+				<img class="headerlogo" src="img/LOGO_CABECALHO.PNG">
+			</a>
+		</div>
+		<div class="menubotao1 menuabre" id="menubotao1id" onclick="abremenu()"> <!-- esse é o botão1 que vai alternar com o botão2 para abrir e fechar o menu. -->
+		</div>
+		<div class="menubotao2 menufecha" id="menubotao2id" onclick="fechamenu()"> <!-- esse é o botão2 que vai alternar com o botão1 para abrir e fechar o menu. -->
+		</div>
+	</div>
+	<!--div que terá o mesmo tamanho que a anterior, para a div anterior que tem position: absolute, para que a primeira receita listada não desapareça por baixo do cabeçalho-->
+	<div class="atrascabecalho row center cinza">
+		<h1>Atrás do logo</h1>
+	</div>
+	<!--Menu lateral que devia estar aparecendo e desaparecendo-->
+		<!--MENU MENU MENU MENU MENU MENU MENU-->
+		<div class="menulista" id="menulistaid">
+			<!--aqui estão os itens dentro do menu-->
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+			<div class="menuitens">
+				<h1>lorem ipsum do japa</h1>
+			</div>
+		</div>
+	<!--Div container da lista de receitas]-->
+	<div id="maplelist" class="container fundo1">
+		<!--Início da repetição das divs. Cada receita a mais faz com que o conteúdo a seguir seja repetido outra vez-->
+		<a href="LURecipe.html">
+			<div class="itemlista bege">	<!--container de uma receita -->
+				<div class="imgreceita" > <!--imagem da receita-->
+					<img class="imagemreceita" src="img/barrinha1.jpg">
+				</div>
+				<div class="nomereceita">	<!-- nome da receita -->
+					<h1>Barrinha de Banana</h1>
+					<div class="linkreceita">		<!--Botão de play-->
+						<h2></h2>
+					</div>
+				</div>
+			</div>
+		</a>
+		<!--fim de repetição das divs. Se quiser testar, copie e cole várias vezes todo o conteúdo dentro da repetição das divs-->
+	</div>
+</body>
+</html>

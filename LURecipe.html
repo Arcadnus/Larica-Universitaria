@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Receita - Larica Universitária</title>
+<link rel="stylesheet" type="text/css" href="LUAppCSS.css">
+	<script>
+
+
+	 		var check = window.location.search.substr(1);
+	 		alert(check);
+	</script>
+</head>
+<body>
+	<div class="frentecabecalho row shadow">
+		<div class="cabecalhologo">
+		</div>
+		<div class="cabecalhotitulo">
+			<a href="LUindex.html">
+				<img class="headerlogo" src="img/LOGO_CABECALHO.PNG">
+			</a>
+		</div>
+		<a href="LUindex.html">			<!-- Link para o index -->
+			<div class="menubotao1 menufecha" id="menubotao1id">		<!--botao de volar pro index-->
+			</div>
+		</a>
+	</div>
+	<!--div que terá o mesmo tamanho que a anterior, para a div anterior que tem position: absolute, para que a primeira receita listada não desapareça por baixo do cabeçalho-->
+	<div class="atrascabecalho row center cinza">
+		<h1>Atrás do logo</h1>
+	</div>
+
+	<div class="container fundo2">
+		<div class="titletext">
+			<p id="title">Receita Escolhida</p>			
+		</div>
+		<!--FAVORITAR-->
+		<div class="favicon">
+			<a>
+				<img class="faviconimg" src="img/FavICON.png">
+			</a>
+		</div>
+			<!--Video da receita-->
+		<div class="vidreceita amarelo inshadow">
+			<img class="imagembarrinha" src="img/barrinha_img.jpg">
+			<div class="playbotao"></div>
+		</div>		<div class="container2 inshadow">
+			<div class="icone tempo">
+				<img src="img/T_ICON.png">
+				<p id="tempo">40 min</p>
+			</div>
+			<div class="icone dificuldade">
+				<img src="img/D_ICON.png">
+				<p id="dificuldade">Fácil</p>
+			</div>
+			<div class="icone porcoes">
+				<img src="img/P_ICON.png">
+				<p class="porcoes">7-12 porções</p>
+			</div>
+		</div>
+		<a href="LUStep_by_Step.html"> <!-- botao para a lista de preparo -->
+			<div class="preparo cinza shadow">
+				<p>Preparo</p>
+			</div>
+		</a>
+		<div class="container4 inshadow">
+			<p class="ingredientes" id="ingredim">
+			<p class="texto" id="textim">
+			Lista de Ingredientes
+			</p>
+		</div>
+	</div>
+</body>
+</html>

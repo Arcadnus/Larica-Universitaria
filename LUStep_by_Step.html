@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Larica Universitária App</title>
+<link rel="stylesheet" type="text/css" href="LUAppCSS.css">
+<script>
+	function alternar() {
+		var altura = document.getElementsByClassName("passoapasso").style.height;
+		alerta(altura);
+		if (altura == "auto"){
+			altura = "2vh";
+		}	
+		if(altura == "2vh"){
+			altura = "auto"
+		}
+		alert(altura);
+	}
+</script>
+</head>
+<body>
+	<div class="frentecabecalho row">
+		<div class="cabecalhologo">
+		</div>
+		<div class="cabecalhotitulo">
+			<a href="LUindex.html">
+				<img class="headerlogo" src="img/LOGO_CABECALHO.PNG">
+			</a>
+		</div>
+		<a href="LURecipe.html">
+			<div class="menubotao1 menufecha" id="menubotao1id">
+			</div>
+		</a>
+	</div>
+	<div class="atrascabecalho row center cinza">
+		<h1>Atrás do logo</h1>
+	</div>
+	<div class="container fundo3">
+		<div class="lista3">
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						01
+					</p>
+				</div>
+				<div class="passoapasso bege"> <!-- Ao clicar essa div vai expandir rpa mostrar o texto completo -->
+					<p id="textao">
+						Preaqueça o forno a 180 ºC (356 ºF / 453.15 K)
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						02
+					</p>
+				</div>
+				<div class="passoapasso bege" onclick="alternar()">
+					<p id="textao">
+						Coloque a aveia em flocos, as oleaginosas e o cacau em pó (caso tenha escolhido usá-lo) no processador.
+						<br> 
+						Triture em pedaços pequenos.
+						<br>
+						(Oleaginosas = Amendoim, Nozes, Castanhas, Amêndoas, Avelãs e Macadâmia
+						<br>
+						Processador = Liquidificador ou algo que tenha lâminas giratórias com função de triturar algo em pequenos pedaços)
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						03
+					</p>
+				</div>
+				<div class="passoapasso bege">
+					<p id="textao">
+						Transfira a mistura para uma tigela e adicione o melado e a banana amassada. Misture tudo até ficar homogêneo.
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						04
+					</p>
+				</div>
+				<div class="passoapasso bege" >
+					<p id="textao">
+						Unte uma forma com açúcar (Cubra todo o interior da forma com uma fina camada de Manteiga ou Margarina e depois jogue açúcar sobre toda a superfície melada com Manteiga ou Margarina)
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						05
+					</p>
+				</div>
+				<div class="passoapasso bege">
+					<p id="textao">
+						Espalhe a mistura sobre a fôrma untada, apertando com a mão ou com uma espátula. Forme uma camada de espessura uniforme.
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						06
+					</p>
+				</div>
+				<div class="passoapasso bege">
+					<p id="textao">
+						Leve ao forno por cerca de 30 minutos a 180 °C.
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						07
+					</p>
+				</div>
+				<div class="passoapasso bege">
+					<p id="textao">
+						Retire do forno e espere esfriar para cortar as barrinhas em tamanhos iguais.
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="numeros bege">
+					<p id="contagem">
+						08
+					</p>
+				</div>
+				<div class="passoapasso bege">
+					<p id="textao">
+						Receita pronta!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
