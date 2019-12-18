@@ -1,2 +1,2 @@
 # Larica-Universitaria
-application for inter, 6th semester
+application for inter, 7th semester
